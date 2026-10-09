@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080909;
+  --surface: #111313;
+  --border: #292d2d;
+  --accent: #ccff00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.display-font {
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.container-fit {
+  width: min(
+    1380px,
+    calc(100% - 48px)
+  );
+
+  margin: auto;
+}
+
+@media (max-width: 640px) {
+  .container-fit {
+    width: calc(100% - 28px);
+  }
+}
